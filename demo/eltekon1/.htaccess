@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /demo/eltekon1
+RewriteCond $1 !^(index\.php|phpinfo\.php|assets|Reports|ccavenue|fb|FileUpload|images|app_upload|NeimGEFile|Crypt|robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
